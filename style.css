@@ -8,9 +8,22 @@ body {
 }
 
 header {
-    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
     font-size: 30px;
-    text-align: center;
+    text-align: left;
+    background: burlywood;
+}
+
+header a {
+    margin: 30px;
+    padding: 10px;
+    border-radius: 15px;
+    background: rgb(109, 73, 73);
+    box-shadow: 11px 1px 10px 1px rgba(0,0,0,0.74);
 }
 
 .part {
@@ -18,18 +31,20 @@ header {
     flex-wrap: wrap; 
     justify-content: space-around;
     margin: 15px auto;
-    width: 90%;
+    width: 60%;
     min-width: 320px;
+    min-height: 520px;
 }
 
 .pa-gallery-player-widget {
-    min-height: 180px;
+    min-height: 520px;
     min-width: 350px;
     flex-grow: 2;
     margin-bottom: 15px;
 }
 
 .text {
+    text-align: center;
     display: block;
     flex-grow: 1;
     min-width: 320px;
@@ -37,7 +52,68 @@ header {
     margin: 15px 10px;
 }
 
-.picture {
-    flex-grow: 1;
-    margin-bottom: 15px;
+.text img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    width: 175px;
+    height: 250px;
 }
+
+label {
+    display: block;
+}
+
+input[type=submit] {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    width: 50%;
+    padding: 10px;
+    border-radius: 15px;
+    background: rgb(109, 73, 73);
+    box-shadow: 11px 1px 10px 1px rgba(0,0,0,0.74);
+  }
+
+  input[type=text], select, textarea {
+    width: 60%;
+    padding: 12px;
+    border: 1px solid rgb(109, 73, 73);
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  .collapsible {
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: column;
+    background-color: rgb(109, 73, 73);
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 18px;
+    font-size: 15px;
+    position: relative;
+    font-size: 20px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .content {
+    text-align: center;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.0s ease-out;
+    background-color: #f1f1f1;
+  }
+
+  .content label {
+      text-align: start;
+      margin: auto;
+      width: 60%;
+  }
