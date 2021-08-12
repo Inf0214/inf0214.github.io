@@ -4,10 +4,20 @@
 }
 
 body {
-    background: #b8adb0;
+    background: #121212;
 }
 
-header {
+@media only screen and (max-width: 1024px) {
+    nav a {
+        float: none;
+        width: 70%;
+        margin: 0;
+        padding:0;
+      }
+  }
+
+nav {
+    overflow: hidden;
     display: flex;
     flex-wrap: wrap; 
     justify-content: center;
@@ -15,15 +25,21 @@ header {
     padding-top: 20px;
     font-size: 30px;
     text-align: left;
-    background: burlywood;
+    background-image: url("picture_frame.png");
+    background-position: center;
+    background-size: cover;
+    font-family: 'Goldman', cursive;
 }
 
-header a {
-    margin: 30px;
+nav a {
+    display: block;
+    margin: 10px 10px;
     padding: 10px;
     border-radius: 15px;
-    background: rgb(109, 73, 73);
+    background: rgba(148, 76, 42, 0.877);
     box-shadow: 11px 1px 10px 1px rgba(0,0,0,0.74);
+    color: thistle;
+    text-decoration: none;
 }
 
 .part {
@@ -33,14 +49,19 @@ header a {
     margin: 15px auto;
     width: 60%;
     min-width: 320px;
-    min-height: 520px;
+    min-height: 160px;
 }
 
 .pa-gallery-player-widget {
-    min-height: 520px;
-    min-width: 350px;
+    display: block;
+    min-height: 320px;
+    max-height: 320px;
+    min-width: 320px;
+    max-width: 640px;
     flex-grow: 2;
     margin-bottom: 15px;
+    border: 30px solid transparent;
+    border-image: url(picture_frame_dark2.png) 30 stretch;
 }
 
 .text {
@@ -72,7 +93,7 @@ input[type=submit] {
     width: 50%;
     padding: 10px;
     border-radius: 15px;
-    background: rgb(109, 73, 73);
+    background: rgba(148, 76, 42, 0.877);
     box-shadow: 11px 1px 10px 1px rgba(0,0,0,0.74);
   }
 
@@ -89,7 +110,7 @@ input[type=submit] {
     display: flex;
     flex-wrap: wrap; 
     flex-direction: column;
-    background-color: rgb(109, 73, 73);
+    background: rgba(148, 76, 42, 0.877);
     color: white;
     cursor: pointer;
     border-radius: 15px;
@@ -100,7 +121,7 @@ input[type=submit] {
   }
   
   .active, .collapsible:hover {
-    background-color: #555;
+    background: rgba(148, 76, 42, 0.877)
   }
   
   .content {

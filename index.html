@@ -2,26 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Bodrogi galéria</title>
+    <link rel = "icon" href = 
+        "icon.png" 
+            type = "image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bodrogi galéria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <header>
+    <nav>
         <h1>Bodrogi Galéria</h1>
         <a href="#tajkep">Tájképek</a>
         <a href="#csendelet">Csendélet</a>
         <a href="#ceruza">Ceruzarajzok</a>
         <a href="#absztrakt">Absztrakt</a>
-    </header>
+    </nav>
     <div class="part">
         <script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
         <div class="pa-gallery-player-widget"
             data-link=""
             data-title=""
             data-description="302 new photos added to shared album"
-            data-background-color="#b8adb0"
+            data-background-color="#121212"
             id="tajkep">
             <object data="https://cdn.pixabay.com/photo/2020/03/26/05/07/travel-4969279_1280.jpg"></object>
             <object data="https://cdn.pixabay.com/photo/2020/03/27/18/01/switzerland-4974469_1280.jpg"></object>
@@ -49,7 +55,7 @@
             data-link=""
             data-title=""
             data-description="302 new photos added to shared album"
-            data-background-color="#b8adb0"
+            data-background-color="#121212"
             id="csendelet">
             <object data="https://cdn.pixabay.com/photo/2020/03/26/05/07/travel-4969279_1280.jpg"></object>
             <object data="https://cdn.pixabay.com/photo/2020/03/27/18/01/switzerland-4974469_1280.jpg"></object>
@@ -65,7 +71,7 @@
             data-link=""
             data-title=""
             data-description="302 new photos added to shared album"
-            data-background-color="#b8adb0"
+            data-background-color="#121212"
             id="ceruza">
             <object data="https://cdn.pixabay.com/photo/2020/03/26/05/07/travel-4969279_1280.jpg"></object>
             <object data="https://cdn.pixabay.com/photo/2020/03/27/18/01/switzerland-4974469_1280.jpg"></object>
@@ -88,7 +94,7 @@
             data-link=""
             data-title=""
             data-description="302 new photos added to shared album"
-            data-background-color="#b8adb0"
+            data-background-color="#121212"
             id="absztrakt">
             <object data="https://cdn.pixabay.com/photo/2020/03/26/05/07/travel-4969279_1280.jpg"></object>
             <object data="https://cdn.pixabay.com/photo/2020/03/27/18/01/switzerland-4974469_1280.jpg"></object>
@@ -104,7 +110,7 @@
                 <input type="text" id="name" name="name" placeholder="Az ön neve">
                 <label for="subject">Üzenet tárgya</label>
                 <textarea id="subject" name="subject" placeholder="Írjon bátran! " style="height:170px"></textarea>
-                <input type="submit" value="Submit" id="submit">
+                <input type="submit" value="Elküldés" id="submit">
             </div>
     </footer>
     <script type="text/javascript" src="./script.js"></script>
